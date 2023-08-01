@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <script>
+        let socket = new io();
+        socket.on('reload',()=>{
+            location.reload()
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>PDF  MAKER</h1>
+    <object data="/document.pdf" type="application/pdf" class="pdf"></object>
+</div>
+</body>
+</html>
